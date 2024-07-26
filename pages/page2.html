@@ -20,6 +20,7 @@
 <body>
 
     <header>
+
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
@@ -50,14 +51,100 @@
                 </div>
             </div>
         </nav>
+
     </header>
 
+    <!-- form -->
+    <div class="container my-4">
+        <h2>Nuovo Libro</h2>
+        <div class="row mt-4">
+            <div class="col">
+
+                <form id="form-ricerca" class="row g-3">
+
+                    <!-- nome -->
+                    <div class="col-6">
+                        <label for="nomeAutore" class="form-label fw-medium">Nome Autore</label>
+                        <input type="text" class="form-control" id="nomeAutore"
+                            placeholder="Inserisci il nome dell'autore" required>
+                    </div>
+
+                    <!-- cognome -->
+                    <div class="col-6">
+                        <label for="cognomeAutore" class="form-label fw-medium">Cognome Autore</label>
+                        <input type="text" class="form-control" id="cognomeAutore"
+                            placeholder="Inserisci il cognome dell'autore" required>
+                    </div>
+
+                    <!-- titolo -->
+                    <div class="col-lg-12">
+                        <label for="titolo" class="form-label fw-medium">Titolo</label>
+                        <input type="text" class="form-control" id="titolo" placeholder="Inserisci il titolo del libro"
+                            required>
+                        <sub class="fs-6 text-secondary fw-medium">Titolo versione italiana</sub>
+                    </div>
+
+                    <!-- genere -->
+                    <div class="col-lg-4">
+                        <label for="genere" class="form-label fw-medium">Genere</label>
+                        <select class="form-select fw-medium" id="genere" required>
+                            <option selected disabled value="">Scegli il genere</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <!-- anno di pubblicazione -->
+                    <div class="col-lg-4">
+                        <label for="annoPubblicazione" class="form-label fw-medium">Anno di Pubblicazione</label>
+                        <input type="text" class="form-control" id="annoPubblicazione" placeholder="Inserisci l'anno"
+                            required>
+                    </div>
 
 
-    <!-- bootstrap script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+                    <!-- codice ISBN -->
+                    <div class="col-lg-4 mb-2">
+                        <label for="codiceIsbn" class="form-label fw-medium">ISBN#</label>
+                        <input type="text" class="form-control" id="codiceIsbn" placeholder="Inserisci il codice ISBN#"
+                            required>
+                    </div>
+
+                    <!-- divisore -->
+
+                    <div class="divider"></div>
+
+                    <!-- text area -->
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="note" class="form-label fw-medium">Note</label>
+                            <textarea class="form-control" id="note" rows="5"
+                                placeholder="Inserisci eventuali note sul libro"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- checkbox -->
+                    <div class="col-12 mt-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="disponibile" required>
+                            <label class="form-check-label fw-medium" for="disponibile">
+                                Disponibile anche in digitale
+                            </label>
+                        </div>
+                    </div>
+                    <!-- button -->
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Aggiungi un libro</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- bootstrap script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

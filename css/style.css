@@ -1,27 +1,33 @@
 
-
-[class^=row] {
-    border: 1px dashed red;
-}
-
-[class^=col] {
-    border: 1px solid rgb(31, 202, 68);
-}
-
 #duck {
     max-width: 75px;
 }
 
-/* placeholder colore */
-.form-control::placeholder{
-    color:var(--bs-secondary)
+/* placeholder colore search bar index */
+#main-navbar .form-control::placeholder {
+    color:var(--bs-secondary);
 }
 
-/* colonna data prestito invis a SM*/
+/* placeholder page2 */
+#form-ricerca .form-control::placeholder {
+    color:var(--bs-secondary);
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.divider {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+}
+
+/* colonna "data prestito" invis a SM*/
 .table td:nth-child(3n+2) {
     display: none;
 }
-/* colonna data prestito visibile da MD in po */
+/* colonna "data prestito" visibile da MD in poi */
 @media screen and (min-width:768px) {
     .table td:nth-child(3n+2) {
         display: table-cell;
