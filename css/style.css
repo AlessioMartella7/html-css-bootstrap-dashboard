@@ -1,0 +1,25 @@
+header {
+    height: 100px;
+}
+
+[class^=row] {
+    border: 1px dashed red;
+}
+
+[class^=col] {
+    border: 1px solid rgb(31, 202, 68);
+}
+
+#tabella-libri {
+    height: 800px;
+}
+
+#todo {
+    height: 200px;
+    background-color: blueviolet;
+}
+
+#faq {
+    height: 300px;
+    background-color: blue;
+}
