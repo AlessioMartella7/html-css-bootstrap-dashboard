@@ -34,6 +34,6 @@
 /* colonna data prestito visibile da MD in po */
 @media screen and (min-width:768px) {
     .table td:nth-child(3n+2) {
-        display: block;
+        display: table-cell;
     }
 }
